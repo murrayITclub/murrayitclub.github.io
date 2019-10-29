@@ -4,35 +4,256 @@
 <title> IT @ Murray, 2019-20 </title>
 <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
 <style>
-body {
-    background-color: yellow;
-    font-family: 'Source Sans Serif', 'Roboto';
-    padding:10px;
+* {
+    box-sizing:border-box;
 }
-h2 {
+body {
+    background-color: ##ffffc9;
+    font-family: sans-serif;
+}
+h1 {
     font-family:'Righteous';
     text-align:center;
 }
-nav {
-    float:left; 
+#wrapper {
+    background-color:yellow;
+    margin:0 auto;
+    padding-top:5px;
+	min-width:1080px; max-width: 1080px;
+    overflow:auto;
     }
+nav {
+    width:13%;
+    float:left;
 
+    margin:auto;
+    padding:10px;
+    padding-left:20px;
+    min-width: 180px;
+    background-color:yellow;
+    }
+nav img {
+    display:block;
+    margin:auto;
+    width:80%;
+    border-radius:8px;
+    }
+nav ul {
+    margin:0;
+    padding:0;
+    width:100%;
+    }
+nav ul li {
+    margin:0;
+    list-style-type: none;
+    width:100%;
+}
+nav li a {
+    display:block;
+    width:100%;
+    padding: 8px 16px;
+}
+nav a:hover {
+    background-color:purple;
+    color:white;
+    }
+    
+main {
+    width:80%;
+    float:left;
+    margin-left:25px;
+    padding:20px;
+    background-color:#ffff99;
+    }
+    article {
+        clear:both;
+        line-height: 120%;
+    }
+    #teacherinfo {
+        font-size:80%;
+        line-height: 1.5;
+    }
+    
+    article h4 {
+        text-decoration: underline;
+
+    }
+    article li {
+        margin:10px;
+    }
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 20%;
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+footer {
+   	font-size: 70%;
+    padding: 10px;
+    clear:both;
+    text-align:center;
+    }
+    header,footer {
+        background-color:lightcyan;
+    }
+    header {
+        padding:15px 0;
+    }
+    .donepics {
+        float:right;
+        width:25%;
+    }
+    .whendone {
+        float:left;
+        width:70%;
+    }
+    strong {
+        font-weight:800;
+    }
 </style>
 </head>
 
 <body>
+        <div id="wrapper">
     <header>
-        <h2> Everything IT @ Murray Middle, 2019-20 </h2>
+        <h1> Everything IT @ Murray Middle, 2019-20 </h1>
     </header>
-    <hav>
+
+    <nav>
         <img src="eileen.png">
-        <ol>
-            <li> </li></ol></hav>
+        <section id="teacherinfo">
+        <p>Teacher: Eileen King <br>
+            Email: <a href="mailto:eking@mncfs.org">eking@mncfs.org</a></p>
+        </section>
+        
+        <!--<h4> Important Links</h4>
+        <ul>
+            <li><a href="pixlr.com/editor">Pixlr Editor</a> </li>
+        <li><a href="makecode.microbit.org">MakeCode</a> </li>
+        <li><a href="makecode.microbit.org">MakeCode</a> </li>
+        </ul>-->
+            </nav>
     <main>
         <p> This website hosts links, images, and resources for Everything IT at Murray Middle School. </p>
-        
+        <hr>
+        <section> <h3>October: Photo Editing</h3>
+        <article> 
+        Our first project involves learning to use <a href="pixlr.com/editor">Pixlr</a> to create memes about class expectations. You can find your own image, or use one of these:
+            
+            <h4>Meme images </h4> 
+            <div class="gallery">
+                <a target="_blank" href="batmanSlap.jpg">
+                <img src="batmanSlap.jpg" alt="batman slap meme">
+                    </a>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="blinking.jpg">
+                <img src="blinking.jpg" alt="blinking man meme">
+                </a>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="carSwerve.jpg">
+                <img src="carSwerve.jpg" alt="car swerving meme">
+                </a>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="disasterGirl.jpg">
+                <img src="disasterGirl.jpg" alt="disaster girl meme">
+                </a>
+            </div>
+            
+                        <div class="gallery">
+                <a target="_blank" href="spidey.jpg">
+                <img src="spidey.jpg" alt="two spidermen meme">
+                </a>
+            </div>  
+            
+            <div class="gallery">
+                <a target="_blank" href="interesting.jpg">
+                <img src="interesting.jpg" alt="most interesting man meme">
+                </a>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="noYes.png">
+                <img src="noYes.png" alt="no/yes meme">
+                </a>
+            </div>
+                        <div class="gallery">
+                <a target="_blank" href="pikachu.png">
+                <img src="pikachu.png" alt="confused pikachu meme">
+                </a>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="headache.jpg">
+                <img src="headache.jpg" alt="types of headache meme">
+                </a>
+            </div>
+            
+            
+            <div class="gallery">
+                <a target="_blank" href="jealousGirlfriend.jpg">
+                <img src="jealousGirlfriend.jpg" alt="jealous girlfriend meme">
+                </a>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="pigeon.jpg">
+                <img src="pigeon.jpg" alt="is this a pigeon meme">
+                </a>
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="fancyWinniethePooh.png">
+                <img src="fancyWinniethePooh.png" alt="Winnie the Pooh meme">
+                </a>
+            </div>
+        </article>
+            <article> 
+                <div class="whendone">
+                <h4>When you're done... </h4>
+                <ol>
+                    <li>Post your meme on your class's board: <a href="https://padlet.com/eileen_arrington_king/x633vb8rb6e6">3:00 class</a> or <a href="https://padlet.com/eileen_arrington_king/sov0y356imil">4:00 class</a></li>
+                    <li>Keep expanding your Pixlr knowledge by...</li>
+                    <ul>
+                        <li>Making <strong>more memes</strong> for other classes or just for fun</li>
+                        <li>Try making a <strong>Keep Calm poster </strong>
+                            <br><i>(click File->New, then set width to 600 and height to 800)</i></li>
+                        <li>Try a <strong>tutorial:</strong> creating a <a href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"> hybrid animal</a> or <a href="https://www.youtube.com/watch?v=onK7DcJdO6s">putting a picture in words</a></li>
+                    </ul>
+                </ol>
+
+                    </div>
+                <br><br><br>
+                <div class="donepics">
+                <img src="https://cdn2.bigcommerce.com/server2100/da4a7/products/492/images/20/KEEP-CALM-POSTER-LOW_large__78588.1291468232.1280.1280.jpg?c=2" width=30%><br>
+                    <a href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"><img src="https://msfetschteachersblog.files.wordpress.com/2017/11/screen-shot-2017-11-19-at-3-32-21-am.png?w=775" width=45%></a>
+                    <a href="https://www.youtube.com/watch?v=onK7DcJdO6s"><img src="https://i.ytimg.com/vi/onK7DcJdO6s/hqdefault.jpg" width=45%></a>
+                    
+                  
+                </div>
+            
+            
+            </article>
+            <br>
+        </section>
         
     </main>
 
+<footer> &copy; Eileen King, 2019-20</footer>
+                </div>
 </body>
 </html>
