@@ -8,8 +8,9 @@
     box-sizing:border-box;
 }
 body {
-    background-color: ##ffffc9;
+    background-color: #ffffc9;
     font-family: sans-serif;
+
 }
 h1 {
     font-family:'Righteous';
@@ -21,11 +22,14 @@ h1 {
     padding-top:5px;
 	min-width:1080px; max-width: 1080px;
     overflow:auto;
+        background-image:url(legalPad.png);
+    background-size:1750px 600px;
     }
 nav {
     width:13%;
     float:left;
     margin:auto;
+    margin-left:10px;
     padding:10px;
     padding-left:20px;
     min-width: 180px;
@@ -90,12 +94,6 @@ article li {
     margin:10px;
     }
     
-.flexgallery {
-    display:flex;
-    flex-flow:column wrap;
-    height:560px;
-}
-    
 #vidgal {
         display:flex;
     justify-content: space-around;
@@ -105,41 +103,47 @@ article li {
     padding:10px;
     }
 
-div.gallery {
+.flexgallery {
+    display:flex;
+    flex-flow:column wrap;
+    height:520px;
+}
+    
+.flexgallery a {
     margin: 5px;
     border: 1px solid #ccc;
     width:20%;
-
-}
-
-div.gallery:hover {
-  border: 1px solid #222;
-}
-
-div.gallery img {
- width:100%;
     margin:auto;
-  height: auto;
+}
+
+.flexgallery img {
+        width:100%;
+    }
+    
+.flexgallery a:hover {
+    border: 1px solid #222;
 }
     
 .donepics {
-        float:right;
-        width:25%;
-    }
+    float:right;
+    width:25%;
+}
+    
 .whendone {
-        float:left;
-        width:70%;
-    }
+    float:left;
+    width:70%;
+}
+    
 strong {
-        font-weight:800;
-    }
+    font-weight:800;
+}
+    
 .puntins {
-        display:flex;
-        flex-flow:row nowrap;
-        justify-content:center;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
     width:50%;
     margin-bottom:40px;
-
 }
     
 .iframe-container {
@@ -165,7 +169,22 @@ strong {
         width:50%;
         float:right;
     }
-    
+    .goals {
+        font-size:80%;
+        font-style:italic;
+        margin:auto;
+        background-image:url("target.png");
+        background-repeat:no-repeat;
+        background-position:right center;
+        background-size: 150px 150px;
+        width:70%;
+        border:1px solid gray;
+        padding:10px;
+    }
+    .goals li {
+        list-style-image: url("checkbox.png"); 
+        list-style-position: inside;
+    }
 
 </style>
 </head>
@@ -186,193 +205,190 @@ strong {
         
         <!--coming later, I think <h4> Important Links</h4>
         <ul>
-            <li><a href="pixlr.com/editor">Pixlr Editor</a> </li>
-        <li><a href="makecode.microbit.org">MakeCode</a> </li>
-        <li><a href="makecode.microbit.org">MakeCode</a> </li>
+            <li><a target="_blank" href="pixlr.com/editor">Pixlr Editor</a> </li>
+        <li><a target="_blank" href="makecode.microbit.org">MakeCode</a> </li>
+        <li><a target="_blank" href="makecode.microbit.org">MakeCode</a> </li>
         </ul>-->
             </nav>
     <main>
-        <p> This website hosts links, images, and resources for Everything IT at Murray Middle School. </p>
+        <p> Here's where you'll find links, images, and resources for Everything IT at Murray Middle School. </p>
         <hr> 
-        <section> <h3>Photo Editing</h3>
+
+        <div class="unit"> <h3>Photo Editing</h3>
+                    <!--
+        <article>Review: What Have You Learned?
+            <br><br>
+            <section>
+            First two projects done? Great! Make sure you've got it with this review quest.</section>
+            
+            </article>-->
         <article>Project #2: Use Pixlr to "carve" a pumpkin (or create a custom emoji)
             <br><br>
-            <div class="puntins leftcol" style="border-right:1px solid black; padding-right:10px;"> <a target="_blank" href="PumpkinTemplate.png"><img src="PumpkinTemplate.png" width="100"> </a><img src="arrow.png" width="100px"><img src="jack.png" width="100"></div>
-            <div class="puntins rightcol"> <a target="_blank" href="blankEmoji.png"><img src="blankEmoji.png" width="100"> </a><img src="arrow.png" width="100px"><img src="pikamoji.png" width="100"></div><br><br>
+             <div class="goals">Goals: be able to...
+                <ul>
+                    <li>Use all three selection tools</li>
+                    <li>Copy and paste from one image to another</li>
+                    <li>Use free transform to adjust parts</li>
+                    <li>Work with layers</li>
+                    </ul>
+                    </div>
             <br>
-            <!--<div class="leftcol" style="border-right:1px solid black; padding-right:10px;">-->
+            Start by saving one of these two base images plus other pictures you want to take parts of. 
+            <br>Then use Pixlr to bring them together!
+            <br><br>
+                        <section>
+            <div class="puntins leftcol" style="border-right:1px solid black; padding-right:10px;"> 
+                <a target="_blank" href="PumpkinTemplate.png"><img src="PumpkinTemplate.png" style="width:100px; height:auto;"> </a>
+                <img src="arrow.png" style="width:100px; height:auto;">
+                <img src="jack.png" style="width:100px; height:auto;">
+            </div>
+            
+            <div class="puntins rightcol"> 
+                <a target="_blank" href="blankEmoji.png"><img src="blankEmoji.png" width="100"> </a>
+                <img src="arrow.png" style="width:100px; height:auto;">
+                <img src="pikamoji.png" style="width:100px; height:auto;">
+            </div>
+            <br><br><br>
+            
             <h4>How do I do it?</h4>
             <div id="vidgal">
-            <div style="width:45%;  padding-right:10px;"><p><strong>Part 1:</strong> <br>Saving images in your club folder.</p>
-               <div class="iframe-container">
-  <iframe src="https://www.youtube.com/embed/q657hLcJk-k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div></div>
+                <div style="width:45%; padding-right:10px;">
+                    <p><strong>Part 1:</strong> <br>Saving images in your club folder.</p>
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/q657hLcJk-k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             
-            <!--<div class="rightcol" style="padding-left:10px;">-->
-            <div style="width:45%; margin-left:10px;  padding-right:10px;">
-            <p><strong>Part 2:</strong> <br>Putting the pieces together in <a href="https://pixlr.com/editor">Pixlr</a> </p>
-              <div class="iframe-container">
-  <iframe src="https://www.youtube.com/embed/khmYVddHfDU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div></div>
-                        <!--    <div style="width:33%; margin-left:10px;">
-                                <p><strong>Part 3 (Optional):</strong> <br>Making it look good </p>
-              <div class="iframe-container">
-  <iframe src="https://www.youtube.com/embed/q657hLcJk-k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div></div> -->
+                <div style="width:45%; margin-left:10px;  padding-right:10px;">
+                    <p><strong>Part 2:</strong> <br>Putting the pieces together in <a target="_blank" href="https://pixlr.com/editor">Pixlr</a> </p>
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/khmYVddHfDU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-
-            </article>
-                        <article> 
+            </section>
+            
+            <section> <!--"When you're done" section for Project 2-->
                 <div class="whendone">
                 <h4>When you're done... </h4>
                 <ol>
-               <li>Make sure your creation is saved...
+                    <li>Make sure your creation is saved...
                         <ul><li>as a <strong>.PNG</strong></li>
                             <li>with a useful <strong>name</strong></li>
                             <li>in your <strong>folder </strong>for this club</li>
                         </ul></li>
                     <li>Keep expanding your Pixlr knowledge by...</li>
-                    <ul>
-                        <li>Making <strong>more memes</strong> for other classes or just for fun</li>
-                        <li>Try making a <strong>Keep Calm poster </strong>
+                        <ul>
+                            <li>Use selection tools to put <strong>yourself</strong> into a painting or famous photo</li>
+                            <li>Choosing a photo and exploring what <strong>other Pixlr tools</strong> can do</li>
+                            <li>Try making a <strong>Keep Calm poster </strong>
                             <br><i>(click File->New, then set width to 800 and height to 1200)</i></li>
-                        <li>Try a <strong>tutorial:</strong> creating a <a href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"> hybrid animal</a> or <a href="https://www.youtube.com/watch?v=onK7DcJdO6s">putting a picture in words</a></li>
-                    </ul>
-                </ol>
-                    
-                    </div>
+                            <li>Try a <strong>tutorial:</strong> creating a <a target="_blank" href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"> hybrid animal</a> or <a target="_blank"  href="https://www.youtube.com/watch?v=onK7DcJdO6s">putting a picture in words</a></li>
+                        </ul>
+                </ol>    
+                </div> <!--whendone div-->
+                
                 <br><br><br>
+                
                 <div class="donepics">
                     <br><br><br><br>
-                <img src="https://cdn2.bigcommerce.com/server2100/da4a7/products/492/images/20/KEEP-CALM-POSTER-LOW_large__78588.1291468232.1280.1280.jpg?c=2" width=30%><br>
-                    <a href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"><img src="https://msfetschteachersblog.files.wordpress.com/2017/11/screen-shot-2017-11-19-at-3-32-21-am.png?w=775" width=45%></a>
-                    <a href="https://www.youtube.com/watch?v=onK7DcJdO6s"><img src="https://i.ytimg.com/vi/onK7DcJdO6s/hqdefault.jpg" width=45%></a>
+                    <!--keep calm poster-->
+                    <img src="https://cdn2.bigcommerce.com/server2100/da4a7/products/492/images/20/KEEP-CALM-POSTER-LOW_large__78588.1291468232.1280.1280.jpg?c=2" width=30%><br>
                     
-                  
+                    <!--hybrid animal-->
+                    <a target="_blank" href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"><img src="https://msfetschteachersblog.files.wordpress.com/2017/11/screen-shot-2017-11-19-at-3-32-21-am.png?w=775" width=45%></a>
+                    
+                    <!--everest photo-->
+                    <a target="_blank" href="https://www.youtube.com/watch?v=onK7DcJdO6s"><img src="https://i.ytimg.com/vi/onK7DcJdO6s/hqdefault.jpg" width=45%></a>
                 </div>
-            
-            
-            </article>
-           
-        <article style="clear:both;"> 
-                        <br><hr><br>
-        Project #1: learning to use <a href="https://pixlr.com/editor">Pixlr</a> to create memes about class expectations. <br><br>You can find your own image, or use one of these:
-            
-            <h4>Meme images </h4> 
-            <p><i>To save a picture, right-click (control-click or two-finger-tap), then choose <strong>Save Image As</strong>.</i></p>
-            <div class="flexgallery">
-            <div class="gallery">
-                <a target="_blank" href="batmanSlap.jpg">
-                <img src="batmanSlap.jpg" alt="batman slap meme">
-                    </a>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="blinking.jpg">
-                <img src="blinking.jpg" alt="blinking man meme">
-                </a>
-            </div>
-            
-            <div class="gallery" id="car">
-                <a target="_blank" href="carSwerve.jpg">
-                <img src="carSwerve.jpg" alt="car swerving meme">
-                </a>
-            </div>
-            
-            <div class="gallery">
-                <a target="_blank" href="disasterGirl.jpg">
-                <img src="disasterGirl.jpg" alt="disaster girl meme">
-                </a>
-            </div>
-            
-                        <div class="gallery">
-                <a target="_blank" href="spidey.jpg">
-                <img src="spidey.jpg" alt="two spidermen meme">
-                </a>
-            </div>  
-            
-            <div class="gallery">
-                <a target="_blank" href="interesting.jpg">
-                <img src="interesting.jpg" alt="most interesting man meme">
-                </a>
-            </div>
-            
-            <div class="gallery">
-                <a target="_blank" href="noYes.png">
-                <img src="noYes.png" alt="no/yes meme">
-                </a>
-            </div>
-                        <div class="gallery">
-                <a target="_blank" href="pikachu.png">
-                <img src="pikachu.png" alt="confused pikachu meme">
-                </a>
-            </div>
                 
-            <div class="gallery">
-                <a target="_blank" href="pigeon.jpg">
-                <img src="pigeon.jpg" alt="is this a pigeon meme">
-                </a>
-            </div>
-                
-                            <div class="gallery">
-                <a target="_blank" href="yellingAtCat.jpg">
-                <img src="yellingAtCat.jpg" alt="Women yelling at Cat meme">
-                </a>
-            </div>
-            
-            <div class="gallery">
-                <a target="_blank" href="headache.jpg">
-                <img src="headache.jpg" alt="types of headache meme">
-                </a>
-            </div>
-            
-            
-            <div class="gallery">
-                <a target="_blank" href="jealousGirlfriend.jpg">
-                <img src="jealousGirlfriend.jpg" alt="jealous girlfriend meme">
-                </a>
-            </div>
-            
-            <div class="gallery">
-                <a target="_blank" href="fancyWinniethePooh.png">
-                <img src="fancyWinniethePooh.png" alt="Winnie the Pooh meme">
-                </a>
-            </div>
-                
-            </div>
+            </section> <!--"When you're done" section for Project 2-->
         </article>
-            <article> 
-                <div class="whendone">
-                <h4>When you're done... </h4>
-                <ol>
-                    <li>Post your meme on <a href="https://padlet.com/eileen_arrington_king/x633vb8rb6e6">our class board.</a></li>
-                    <li>Keep expanding your Pixlr knowledge by...</li>
-                    <ul>
-                        <li>Making <strong>more memes</strong> for other classes or just for fun</li>
-                        <li>Try making a <strong>Keep Calm poster </strong>
-                            <br><i>(click File->New, then set width to 800 and height to 1200)</i></li>
-                        <li>Try a <strong>tutorial:</strong> creating a <a href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"> hybrid animal</a> or <a href="https://www.youtube.com/watch?v=onK7DcJdO6s">putting a picture in words</a></li>
+            
+        <article style="clear:both;"> 
+            <br><hr><br>
+            <section>           
+                Project #1: learning to use <a target="_blank" href="https://pixlr.com/editor">Pixlr</a> to create memes about class expectations. <br><br>
+                <div class="goals">Goals: be able to...
+                <ul>
+                    <li>Find and save an image from the Internet</li>
+                    <li>Open an image in Pixlr</li>
+                    <li>Add text to an image</li>
+                    <li>Save the image from Pixlr to a computer</li>
                     </ul>
-                </ol>
-                    
                     </div>
-                <br><br><br>
-                <div class="donepics">
-                <img src="https://cdn2.bigcommerce.com/server2100/da4a7/products/492/images/20/KEEP-CALM-POSTER-LOW_large__78588.1291468232.1280.1280.jpg?c=2" width=30%><br>
-                    <a href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"><img src="https://msfetschteachersblog.files.wordpress.com/2017/11/screen-shot-2017-11-19-at-3-32-21-am.png?w=775" width=45%></a>
-                    <a href="https://www.youtube.com/watch?v=onK7DcJdO6s"><img src="https://i.ytimg.com/vi/onK7DcJdO6s/hqdefault.jpg" width=45%></a>
+                <br>You can find your own image, or use one of these:
+
+                <h4>Meme images </h4> 
+                    <p><i>To save a picture, right-click (control-click or two-finger-tap), then choose <strong>Save Image As</strong>.</i></p>
+
+                <div class="flexgallery">
+                    <a target="_blank" href="batmanSlap.jpg"> <img src="batmanSlap.jpg" alt="batman slap meme"> </a>
+
+                    <a target="_blank" href="blinking.jpg"> <img src="blinking.jpg" alt="blinking man meme"> </a>
+
+                    <a target="_blank" href="carSwerve.jpg"> <img src="carSwerve.jpg" alt="car swerving meme"> </a>
+
+                    <a target="_blank" href="disasterGirl.jpg"> <img src="disasterGirl.jpg" alt="disaster girl meme"> </a>
+
+                    <a target="_blank" href="spidey.jpg"> <img src="spidey.jpg" alt="two spidermen meme"> </a>
+
+                    <a target="_blank" href="interesting.jpg"><img src="interesting.jpg" alt="interesting man meme"> </a>
+
+                    <a target="_blank" href="noYes.png"> <img src="noYes.png" alt="no/yes meme"> </a>
+
+                    <a target="_blank" href="pikachu.png"> <img src="pikachu.png" alt="confused pikachu meme"> </a>
+
+                    <a target="_blank" href="pigeon.jpg"> <img src="pigeon.jpg" alt="is this a pigeon meme"></a>
+
+                    <a target="_blank" href="yellingAtCat.jpg"> <img src="yellingAtCat.jpg" alt="yelling at Cat meme"></a>
+
+                    <a target="_blank" href="headache.jpg"> <img src="headache.jpg" alt="types of headache meme"> </a>
+
+                    <a target="_blank" href="jealousGirlfriend.jpg"><img src="jealousGirlfriend.jpg" alt="jealous girlfriend meme"></a>
+
+                    <a target="_blank" href="fancyWinniethePooh.png"><img src="fancyWinniethePooh.png" alt="Winnie the Pooh meme"> </a>
+
+                </div> <!--end of flex gallery-->
+            </section> 
+        
+            <section> <!-- "When you're done" section for Project 1"-->
+                <div class="whendone">
+                    <h4>When you're done... </h4>
+                    <ol>
+                        <li>Post your meme on <a target="_blank"  href="https://padlet.com/eileen_arrington_king/x633vb8rb6e6">our class board.</a></li>
+                        <li>Keep expanding your Pixlr knowledge by...</li>
+                        <ul>
+                            <li>Making <strong>more memes</strong> for other classes or just for fun</li>
+                            <li>Try making a <strong>Keep Calm poster </strong>
+                            <br><i>(click File->New, then set width to 800 and height to 1200)</i></li>
+                            <li>Try a <strong>tutorial:</strong> creating a <a target="_blank" href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"> hybrid animal</a> or <a target="_blank" href="https://www.youtube.com/watch?v=onK7DcJdO6s">putting a picture in words</a></li>
+                        </ul>
+                    </ol>
                     
-                  
                 </div>
+                
+                <div class="donepics">
+                    <br><br><br>
+                    <!--keep calm poster-->
+                    <img src="https://cdn2.bigcommerce.com/server2100/da4a7/products/492/images/20/KEEP-CALM-POSTER-LOW_large__78588.1291468232.1280.1280.jpg?c=2" width=30%><br>
+                    
+                    <!--hybrid animal-->
+                    <a target="_blank" href="https://msfetschteachersblog.wordpress.com/animal-hybrid-pixlr-intro-assignment/"><img src="https://msfetschteachersblog.files.wordpress.com/2017/11/screen-shot-2017-11-19-at-3-32-21-am.png?w=775" width=45%></a>
+                    
+                    <!--everest photo-->
+                    <a target="_blank" href="https://www.youtube.com/watch?v=onK7DcJdO6s"><img src="https://i.ytimg.com/vi/onK7DcJdO6s/hqdefault.jpg" width=45%></a>
+                </div>
+            </section>
             
-            
-            </article>
+            </article> <!-- Project #1 article -->
             <br>
-        </section>
+        </div> <!--end of unit div-->
         
     </main>
 
-<footer> &copy; Eileen King, 2019-20</footer>
-                </div>
+    <footer> &copy; Eileen King, 2019-20</footer>
+    </div> <!--end of wrapper div-->
+    
 </body>
 </html>
