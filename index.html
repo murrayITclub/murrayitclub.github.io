@@ -25,21 +25,25 @@ h1 {
         background-image:url(legalPad.png);
     background-size:1750px 600px;
     }
+
 nav {
-    width:13%;
+    width:20%;
     float:left;
     margin:auto;
-    margin-left:10px;
     padding:10px;
     padding-left:20px;
+    padding-right:20px;
     min-width: 180px;
-    background-color:yellow;
+    background-color:#00000011;
+    height:1000px;
+
     }
 nav img {
     display:block;
     margin:auto;
-    width:80%;
+    width:70%;
     border-radius:8px;
+
     }
 #teacherinfo {
         font-size:80%;
@@ -55,12 +59,12 @@ nav ul li {
     list-style-type: none;
     width:100%;
 }
-nav li a {
+nav ul li a {
     display:block;
     width:100%;
     padding: 8px 16px;
 }
-nav a:hover {
+nav ul li a:hover {
     background-color:purple;
     color:white;
     }
@@ -79,9 +83,9 @@ header {
 main {
     width:80%;
     float:left;
-    margin-left:25px;
+
     padding:20px;
-    background-color:#ffff99;
+    background-color:#ffff9966;
     }
 article {
     clear:both;
@@ -145,6 +149,10 @@ strong {
     width:50%;
     margin-bottom:40px;
 }
+    .puntins img {
+        width:100px;
+        height:100px;
+    }
     
 .iframe-container {
   overflow: hidden;
@@ -191,6 +199,7 @@ strong {
 
 <body>
         <div id="wrapper">
+            <div id="innerwrapper">
     <header>
         <h1> Everything IT @ Murray Middle, 2019-20 </h1>
         <!--if you're reading this, congrats! you've found the easter eggo. waffley goodness upon you. -->
@@ -203,14 +212,14 @@ strong {
             Email: <a href="mailto:eking@mncfs.org">eking@mncfs.org</a></p>
         </section>
         <hr>
-        <strong>bit.ly/murrayIT</strong>
-        
-        <!--coming later, I think <h4> Important Links</h4>
+        <h3><strong>bit.ly/murrayIT</strong></h3>
+        <hr>
+        <h4 style="line-height:0; text-align:center;"><a target="_blank" style="color:black; text-decoration:none;" href="challenge.html">Useful Links</a></h4>
         <ul>
-            <li><a target="_blank" href="pixlr.com/editor">Pixlr Editor</a> </li>
-        <li><a target="_blank" href="makecode.microbit.org">MakeCode</a> </li>
-        <li><a target="_blank" href="makecode.microbit.org">MakeCode</a> </li>
-        </ul>-->
+            <li><a target="_blank" href="https://pixlr.com/editor">Pixlr Editor</a> </li>
+            <li><a target="_blank" href="https://unsplash.com/">Unsplash</a> </li>
+            <li><a target="_blank" href="https://www.pexels.com/">Pexels</a> </li>
+        </ul>
             </nav>
     <main>
         <p> Here's where you'll find links, images, and resources for Everything IT at Murray Middle School. </p>
@@ -223,7 +232,10 @@ strong {
             <section>
             First two projects done? Great! Make sure you've got it with this review quest.</section>
             
-            </article>-->
+            </article>
+            <article>Project #3: Pixlr Choice Project
+            <br><br>
+            There is a TON of cool stuff we can do with Pixlr! Now that you've learned the basics, you're ready to build your own skills by choosing a tutorial. </article><hr>-->
         <article>Project #2: Use Pixlr to "carve" a pumpkin (or create a custom emoji)
             <br><br>
              <div class="goals">Goals: be able to...
@@ -240,15 +252,15 @@ strong {
             <br><br>
                         <section>
             <div class="puntins leftcol" style="border-right:1px solid black; padding-right:10px;"> 
-                <a target="_blank" href="PumpkinTemplate.png"><img src="PumpkinTemplate.png" style="width:100px; height:auto;"> </a>
-                <img src="arrow.png" style="width:100px; height:auto;">
-                <img src="jack.png" style="width:100px; height:auto;">
+                <a target="_blank" href="PumpkinTemplate.png"><img src="PumpkinTemplate.png"> </a>
+                <img src="arrow.png">
+                <img src="jack.png">
             </div>
             
             <div class="puntins rightcol"> 
-                <a target="_blank" href="blankEmoji.png"><img src="blankEmoji.png" width="100"> </a>
-                <img src="arrow.png" style="width:100px; height:auto;">
-                <img src="pikamoji.png" style="width:100px; height:auto;">
+                <a target="_blank" href="blankEmoji.png"><img src="blankEmoji.png"> </a>
+                <img src="arrow.png">
+                <img src="pikamoji.png">
             </div>
             <br><br><br>
             
@@ -388,6 +400,7 @@ strong {
         </div> <!--end of unit div-->
         
     </main>
+            </div> <!--end innerwrapper-->
 
     <footer> &copy; Eileen King, 2019-20</footer>
     </div> <!--end of wrapper div-->
