@@ -1,0 +1,234 @@
+* {
+    box-sizing:border-box;
+
+}
+
+body {
+    background-color: #ffffc9;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family:'Righteous';
+    text-align:center;
+}
+
+#wrapper {
+    background-color:yellow;
+    margin:0 auto;
+    padding-top:5px;
+	min-width:1080px; max-width: 1080px;
+    overflow:auto;
+    background-image:url(legalPad.png);
+    background-size:1750px 600px;
+}
+
+nav {
+    width:20%;
+    float:left;
+    margin:auto;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    min-width: 180px;
+    background-color:#00000011;
+    height:1000px;
+}
+
+nav img {
+    display:block;
+    margin:auto;
+    width:70%;
+    border-radius:8px;
+}
+
+#teacherinfo {
+        font-size:80%;
+        line-height: 1.5;
+}
+
+nav ul {
+    margin-left:-20px;
+    padding:0;
+    width:120%; /* WHY DOES THIS WORK THIS WAY */
+}
+
+nav ul li {
+    margin:0;
+    list-style-type: none;
+    width:100%;
+}
+
+nav ul li a {
+    display:block;
+    width:100%;
+    padding: 8px 48px;
+    font-size:95%;
+}
+
+nav ul li a:hover {
+    background-color:purple;
+    color:white;
+}
+
+footer {
+   	font-size: 70%;
+    padding: 10px;
+    clear:both;
+    text-align:center;
+}
+
+header,footer {
+    background-color:lightcyan;
+}
+
+header {
+    padding:15px 0;
+    font-size: 120%;
+}
+
+main {
+    width:80%;
+    float:left;
+    padding:20px;
+    background-color:#ffff9966;
+}
+
+article {
+    clear:both;
+    line-height: 120%;
+}
+
+article h4 {
+    text-decoration: underline;
+}
+
+article li {
+    margin:10px;
+}
+    
+#vidgal {
+    display:flex;
+    justify-content: space-around;
+    height:320px;
+    width:100%;
+    border:1px solid black;
+    padding:10px;
+}
+
+.flexgallery {
+    display:flex;
+    flex-flow:column wrap;
+    height:520px;
+}
+    
+.flexgallery a {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width:20%;
+    margin:auto;
+}
+
+.flexgallery img {
+        width:100%;
+}
+    
+.flexgallery a:hover {
+    border: 1px solid #222;
+}
+    
+.donepics {
+    float:right;
+    width:25%;
+}
+    
+.whendone {
+    float:left;
+    width:70%;
+}
+    
+strong {
+    font-weight:800;
+}
+    
+.puntins {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    width:50%;
+    margin-bottom:40px;
+}
+
+.puntins img {
+    width:100px;
+    height:100px;
+}
+    
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+    
+.leftcol {
+    width:50%;
+    float:left;
+}
+
+.rightcol {
+    width:50%;
+    float:right;
+}
+
+.goals {
+    font-size:80%;
+    font-style:italic;
+    margin:auto;
+    background-image:url("target.png");
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size: 150px 150px;
+    width:70%;
+    border:1px solid gray;
+    padding:10px;
+}
+
+.goals li {
+    list-style-image: url("checkbox.png"); 
+    list-style-position: inside;
+}
+
+#findpics {
+    font-size:90%;
+    font-style:italic;
+    margin:auto;
+    background-size: 150px 150px;
+    width:80%;
+    border:1px solid gray;
+    padding:10px;
+}
+
+.articleimg {
+    width:50%;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.articleimg img {
+    width:100%;
+}
+
+.secretlink {
+    text-decoration: none;
+    color:black;
+}
