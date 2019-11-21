@@ -107,7 +107,7 @@ article li {
     margin:10px;
 }
     
-#vidgal {
+.vidgal {
     display:flex;
     justify-content: space-around;
     height:320px;
