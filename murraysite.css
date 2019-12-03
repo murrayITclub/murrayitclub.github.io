@@ -3,6 +3,12 @@
 
 }
 
+hr {
+
+    height: 3px;
+
+}
+
 body {
     background-color: #ffffc9;
     font-family: sans-serif;
