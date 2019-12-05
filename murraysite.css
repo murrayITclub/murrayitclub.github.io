@@ -4,9 +4,7 @@
 }
 
 hr {
-
     height: 3px;
-
 }
 
 body {
@@ -98,6 +96,30 @@ main {
     float:left;
     padding:20px;
     background-color:#ffff9966;
+}
+
+.secret-accordion, .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+    font-size: 120%;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover, .secret-accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #ffffff55;
+  overflow: hidden;
 }
 
 article {
