@@ -57,22 +57,40 @@ nav ul {
     width:120%; /* WHY DOES THIS WORK THIS WAY */
 }
 
-nav ul li {
+.secondarynav ul {
+    width:80%;
+}
+
+nav ul li, .secondarynav ul li {
     margin:0;
     list-style-type: none;
     width:100%;
 }
 
-nav ul li a {
+nav ul li a, .secondarynav ul li a {
     display:block;
     width:100%;
     padding: 8px 48px;
     font-size:95%;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, .secondarynav ul li a:hover, .links a:hover {
     background-color:purple;
     color:white;
+}
+
+.links {
+    display:inline;
+
+}
+
+.links a {
+    display:inline-block;
+    padding:10px;
+    width:48%;
+    text-align:center;
+    border:1px solid purple;
+    text-decoration: none;
 }
 
 footer {
@@ -140,15 +158,36 @@ article li {
     justify-content: space-around;
     flex-flow:row wrap;
     width:100%;
+    height:auto;
     border:1px solid black;
     padding:10px;
 }
 
 .vidgal div {
     border-right:1px solid black;
+    padding:0px 5px 0px 10px; 
 }
 
 .vidgal div:last-child {
+    border:none;
+}
+
+.hocgal {
+    display:flex;
+    justify-content: space-around;
+    flex-flow:row wrap;
+    width:100%;
+    height:auto;
+    border:1px solid black;
+    padding:10px;
+}
+
+.hocgal div {
+    border-right:1px solid black;
+    margin-left:1%;
+}
+
+.hocgal div:last-child {
     border:none;
 }
 

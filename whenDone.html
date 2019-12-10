@@ -34,22 +34,36 @@
         <p> Here's where you'll find links, images, and resources for Everything IT at Murray Middle School. </p>
         <hr> 
 
-        <div class="unit"> <h3>Photo Editing: More Ideas!</h3>
-            <div style="line-height: 1.4; border:2px solid red; padding:0 10px;width:94%;"><p><span style="color:red; display:inline; text-decoration: underline;">Before you keep reading:</span> make sure your <strong>meme</strong>, your <strong>pumpkin or emoji</strong>, and your <strong>final choice project</strong> are totally <strong>finished <i>and in your IT Club folder</i></strong>.</p>
-                <p>If those things are not done yet, or you don't know how to check, ask a classmate for help first!</p>
+        <div class="unit"> <h3>When you're done...</h3>
+            <div style="line-height: 1.4;"><p>
+                So you've finished something early and are in search of something new to explore. You've come to the right place!
+                </p>
             <p style="text-align:center"><a href="index.html">&#8592; Go back</a></p>
         </div>
-               
-
-            <section id="done" style="line-height: 1.3">
+            <button class="accordion">Coding &amp; Computer Science</button>
+            <div class="panel">
+                Try one of these Hour of Code activities!
+                <div class="vidgal">
+                    
+            </div>
+            
+                  
+            <button class="accordion">Games</button>
+            <div class="panel">
+                <div class="secondarynav">
+                <ul style="line-height:1.5">
+                    <li><a href="studentgames/studentgames.html">Games made by Murray students</a></li>
+                    <li><a href="">codetyper.io</a></li>
+                </ul>
+                </div>
+                <br>
+            </div>
+            <br><br>
+            <button class="accordion">Things related to photo editing</button>
+            <div class="panel">
                 <div class="whendone" style="width:60%">
-                <h4>Really done?</h4>
-                    <p>Cool! There are lots of things to try:
-                        <br><span style="margin-left:20px;margin-top:-10px"><i>(and remember: more learning = more awesome = more XP)</i></span></p>
-                                              <hr style="clear:both;">
-     
                     <ul><br>
-                    <li style="line-height: 1.4">Try adding <strong>text</strong> to something you made with a partial filter or greenscreen.<br><i>Pro tips:</i></li>
+                    <li style="line-height: 1.4">In Pixlr: try adding <strong>text</strong> to something you made with a partial filter or greenscreen.<br><i>Pro tips:</i></li>
                         <ul><li>If you <strong>duplicate</strong> your text layer and make it a different color, you can create a cool shadow effect, like this flower picture</li>
                             <li>If you <strong>right-click</strong> on your text layer, then click <strong>Rasterize Layer</strong>, you can use filters on the text. Try the <strong>Noise</strong> filter to make text look sparkly!</li>
                         </ul>
@@ -90,7 +104,7 @@
                 </ul>    
                 </div> <!--whendone div-->
                 <div class="donepics" style="width:30%">
-                    <br><br><br><br><br><br><br>
+                    <br>
                     <img src="flowerswithtext.png" style="width:67%;"><br>
                     <img src="textureExample.png" style="width:70%;" alt="smiling woman with wallpaper-like mostly-transparent texture"><br>
                                         
@@ -112,8 +126,8 @@
 
                     
                 </div>
-                
-            </section> <!--"When you're done" section-->
+            </div>
+
             
         </div> <!--end of unit div-->
         
@@ -121,6 +135,32 @@
 
     <footer> &copy; Eileen King, 2019-20</footer>
     </div> <!--end of wrapper div-->
+    
+    <script>
+        
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+ 
+    
+</script>
+    
     
 </body>
 </html>
