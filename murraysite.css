@@ -98,7 +98,7 @@ main {
     background-color:#ffff9966;
 }
 
-.secret-accordion, .accordion {
+.accordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -111,7 +111,7 @@ main {
   transition: 0.4s;
 }
 
-.active, .accordion:hover, .secret-accordion:hover {
+.active, .accordion:hover{
   background-color: #ccc; 
 }
 
@@ -138,10 +138,27 @@ article li {
 .vidgal {
     display:flex;
     justify-content: space-around;
-    height:320px;
+    flex-flow:row wrap;
     width:100%;
     border:1px solid black;
     padding:10px;
+}
+
+.vidgal div {
+    border-right:1px solid black;
+}
+
+.vidgal div:last-child {
+    border:none;
+}
+
+.galleryitem {
+    margin:auto;
+    width:100%;
+}
+
+.galleryitem img {
+    margin:auto;
 }
 
 .flexgallery {
