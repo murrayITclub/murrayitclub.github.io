@@ -129,12 +129,60 @@ main {
   transition: 0.4s;
 }
 
-.active, .accordion:hover{
+.active, .accordion:hover, .subaccordion:hover, .inneraccordion:hover{
   background-color: #ccc; 
+}
+
+.subaccordion {
+  background-color: #C096BF;
+  color: #333;
+  cursor: pointer;
+  padding: 14px;
+    margin-left:10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 100%;
+  transition: 0.4s;
+    margin-top:10px;
+}
+
+.inneraccordion {
+  background-color: #e2cfe2;
+  color: #333;
+  cursor: pointer;
+  padding: 14px;
+    margin-left:10px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 100%;
+  transition: 0.4s;
 }
 
 .panel {
   padding: 0 18px;
+  display: none;
+  background-color: #ffffff55;
+  overflow: hidden;
+}
+
+.subacc_panel {
+  padding: 0 18px;
+  margin-left:10px;
+    margin-right:-10px;
+  display: none;
+  background-color: #ffffff55;
+  overflow: hidden;
+}
+
+.innerpanel {
+  padding: 0 18px;
+    width:90%;
+  margin-left:10px;
+    margin-right:-10px;
   display: none;
   background-color: #ffffff55;
   overflow: hidden;
@@ -286,9 +334,30 @@ strong {
     padding:10px;
 }
 
+.review {
+    font-size:90%;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:20px;
+    width:75%;
+    border:2px dashed gray;
+    padding-left:10px;
+}
+
 .goals li {
     list-style-image: url("checkbox.png"); 
     list-style-position: inside;
+}
+
+.nextbutton {
+    display:inline;
+}
+
+.go_on {
+    display:inline;
+    margin-left:10%;
+    font-size:90%;
+    color:#222;
 }
 
 #findpics {
