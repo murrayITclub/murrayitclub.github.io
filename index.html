@@ -230,18 +230,35 @@
             
             <button class="subaccordion">Step #8: The Image Tag</button>
             <div class="subacc_panel">   
-                <p>1. Next, you'll use some code.org activities to learn about the tag for adding <strong>images</strong>. This tag is different from the other tags you've learned so far - pay close attention!</p>
-                <p>In Lesson 7: Take a look at #1, then try puzzles <strong>2 and 3.</strong>. You may also want to read #6.</p>
+                
+                <p>1. This video will show you how to work with images in HTML:</p>
+            <div style="width:75%; margin:auto;">
+             <div class="iframe-container">
+                 <iframe src="https://www.youtube.com/embed/HJq2Vadbu7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+            </div>
+                <div class="review"><p><u>Quick review</u>: in this video you saw that...</p>
+                    <ul>
+                        <li>The &#60;img&#62; tag is <strong>different from other tags</strong> because...</li>
+                        <ul>
+                        <li>It needs a <strong>source</strong> and <strong>alt text</strong> to work.<br>
+                            For example, <code style="font-size:120%; background-color:#00000022;padding:10px;margin-left:20px;">&#60;img src="emoji.png" alt="emoji with Pikachu face" &#62;</code>
+                            <li> It does <strong>not</strong> need a closing tag - there is no &#60;&#47;img&#62; tag!</li>
+                        </ul>
+                    </ul>
+                        </div>
+                
+                <p>2. Next, you'll try two quick code.org activities to make sure you've got the idea.</p>
+                <p>In Lesson 7: Take a look at #1, then try puzzles <strong>2 and 3</strong>. You may also want to read #6.</p>
             
              
                 <img src ="lesson7.png" style="width:60%;margin-left:20px;float:left;margin-bottom:10px;">
                 <div class="links" style="width:20%;float:right;"><a target="_blank" style="width:90%; margin-bottom:10px;" href="https://studio.code.org/s/csd2-2019/stage/7/puzzle/2">Let's go!</a></div>
-                
+                <br>
                 <p style="clear:both;"> As you work, remember that there are <strong>tips</strong> you can use anytime: just click a question to see the answer!</p>
                 <img src="leveltips.png" style="width:90%;margin:auto;">
-                <p style="float:left;font-size:95%;color:#222;"><i>Also, make sure you read <u>all</u> the directions for each activity - you will usually need to scroll down.</i></p>
                 
-                <p style="clear:both;margin-top:10px">2. Add the new tag you learned to your HTML Tag chart.</p>
+                <p style="clear:both;margin-top:10px">3. Add the new tag you learned to your HTML Tag chart.</p>
                 
                 <div style="width:80%;margin:auto;"><p class="go_on"><i>Done with all these things? Check off Step 8, then click </i></p><button class="nextbutton">Next &#8594;</button></div>
             </div> <!--end of subacc 8: img tag-->  
@@ -278,15 +295,15 @@
                 <button class="inneraccordion" style="margin-top:-5px;">How do I make an image <strong>bigger or smaller</strong>?</button>
                         <div class="innerpanel">
                             <p>Right now, your image tags should look something like this:</p>
-                                <code style="font-size:120%; background-color:#00000022;padding:10px;margin-left:20px;">&#60;img src="emoji.png"&#62;</code>
+                                <code style="font-size:120%; background-color:#00000022;padding:10px;margin-left:20px;">&#60;img src="emoji.png" alt="emoji with Pikachu face" &#62;</code>
                                 <p>
                                 To change the size, you can add a <i>style attribute</i> to the tag, like this:</p>
-                                <code style="font-size:120%; background-color:#00000022;padding:10px;margin-left:20px;">&#60;img src="emoji.png" <strong>style="width:50%;"</strong>&#62;</code><br>
+                                <code style="font-size:120%; background-color:#00000022;padding:10px;margin-left:20px;">&#60;img src="emoji.png" alt="emoji with Pikachu face" <strong>style="width:50%;"</strong>&#62;</code><br>
                             <p style="font-size:80%;margin-left:10px;"><i>Why do I only set the width and not the height? When you change the width, the computer will change the height automatically. This makes sure the image still looks correct!</i></p>
                         </div>
                 
                 <p style="line-height: 1.5">2. <i>Optional:</i> add other images to your website. For example, you could add a picture of yourself, or a screenshot of other work we've done this year!</p>
-                    <p style="line-height: 1.5;margin-left:20px;"><i>When you add images, make sure you choose things you know are not copyrighted. In general, that means you should stick to photos you took or art you created, or search a website like <a target="_blank" href="https://unsplash.com/">Unsplash</a> or <a target="_blank" href="https://www.pexels.com/">Pexels</a> instead of a Google search.</i></p>
+                    <p style="line-height: 1.5;margin-left:20px;"><i>When you add images, choose things you know are <strong>not copyrighted</strong>. In general, that means you should stick to photos you took or art you created, or search a website like <a target="_blank" href="https://unsplash.com/">Unsplash</a> or <a target="_blank" href="https://www.pexels.com/">Pexels</a> instead of a Google search.</i></p>
                 
                 <div style="width:80%;margin:auto;"><p class="go_on"><i>Done with all these things? Check off Step 9, then click </i></p><button class="nextbutton">Next &#8594;</button></div>
                 <!--<div style="width:90%;margin:auto;"><p style="font-size:90%;margin-left:40px;margin-top:20px;"><i>Done with all these things? Check off Step 9. Next class there will be more to learn!<br>For now, keep adding to your website, or try one of the options below:</i></p></div>-->
@@ -294,8 +311,12 @@
             <button class="subaccordion">Step #10: Publishing Your Website!</button>
              <div class="subacc_panel">   
                 <p style="line-height:1.5">You've been working hard on your website. Now it's time for other people to be able to see it from any computer! Here's how to publish:</p>
-                 <div style="border:1px solid red;background-color:#ff000022;padding:10px;">Before you start, you'll need to be totally sure you know your <strong>@stpaul.k12.mn.us email address</strong>. If you aren't 100% sure, ask first!</div>
+                 <div style="border:1px solid red;background-color:#ff000022;padding:10px;margin-bottom:20px;">Before you start, you'll need to be totally sure you know your <strong>@stpaul.k12.mn.us email address</strong>. If you aren't 100% sure, ask first!</div>
+                 
+                 <button class="inneraccordion" style="margin-top:5px;">Creating a Github Account</button>
+                        <div class="innerpanel">
                  <p style="line-height: 1.4">1. We'll use a tool called Github for hosting our websites. <a href="https://github.com/" target="_blank">Click here</a> to go to Github.</p>
+                 
                  
                 <p style="line-height:1.5">2. You'll need to start by <strong>creating an account</strong>. Your username will become part of your website's address, and your email needs to be typed perfectly. Fill out the form, then click <span style="color:white;background-color:green;padding:2px 8px;">Sign up for GitHub</span></p>
                 <div style="width:45%; margin:auto;" class="articleimg"><img style="width:100%;" src="githubScreenshots/github1.png"></div>
@@ -307,6 +328,10 @@
                  <div style="width:50%" class="articleimg"><img style="width:100%;" src="githubScreenshots/github5.png"></div>
                 <p>5. Click <span style="color:white;background-color:blue;padding:2px 8px;">Choose Free</span>.
                  <div style="width:50%" class="articleimg"><img style="width:100%;" src="githubScreenshots/github6.png"></div>
+                 </div>
+                 
+                 <button class="inneraccordion" style="margin-top:5px;">Verifying Your Email</button>
+                        <div class="innerpanel">
                  
                  <p>6. Next, you'll probably see something like this.</p>
                 <div style="width:50%" class="articleimg"><img style="width:100%;" src="githubScreenshots/github7.png"></div>
@@ -318,6 +343,10 @@
                  
                  <p> Click the email to open it, then click <span style="color:white;background-color:blue;padding:2px 8px;">Verify email address</span>. After you click the button, you'll probably need to <strong>Sign in</strong>.</p>
                 <div style="width:90%" class="articleimg"><img style="width:60%;padding-right:10px;" src="githubScreenshots/github9.png"><img style="width:35%;" src="githubScreenshots/github10.png"></div>
+                 </div>
+                 
+                 <button class="inneraccordion" style="margin-top:5px;">Publishing your website</button>
+                        <div class="innerpanel">
 
                 <p>8. Now you're finally ready to publish your website! Just a few more steps. First, click <strong>+</strong>, then <strong>New repository</strong>:</p>
                 <div style="width:50%" class="articleimg"><img style="width:100%;" src="githubScreenshots/github11.png"></div>
@@ -341,9 +370,10 @@
                 <div style="width:40%" class="articleimg"><img style="width:100%;" src="githubScreenshots/github17.png"></div>
                  <p>Once the loading screen disappears, you can go to <code style="font-size:110%; background-color:#00000022;padding:8px;border-radius:5px;"><i>[your username]</i>.github.io</code> to see your website! Try it, or even better - have a friend take a look.<p>
                 <div style="width:80%" class="articleimg"><img style="width:100%;" src="githubScreenshots/github18.png"></div>
+                 </div>
                  
-                <div style="width:100%;margin:auto;"><p class="go_on"><i>Congratulations - you've built and published your first website! Check off step 10, and be SO proud of yourself.</i></p></div>
-            </div> <!--end of subacc 5: use brackets-->    
+                <div style="width:100%;margin:auto;margin-top:10px;margin-bottom:10px;"><p style="font-size:90%;"><i><strong>Congratulations - you've built and published your first website! Check off step 10, and be SO proud of yourself.</strong></i></p></div>
+            </div> <!--end of subacc 10: host on github-->    
             
             <hr>
         
