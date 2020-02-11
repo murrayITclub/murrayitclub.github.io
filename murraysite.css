@@ -385,3 +385,50 @@ strong {
     text-decoration: none;
     color:black;
 }
+
+a.demo_img {
+		display: block;
+		width:300px;
+		position:relative;
+		line-height:25px;
+	}
+	
+	a.demo_img>div {
+		position:absolute;
+		padding:0;
+		margin:0;
+        width:100%;  
+        overflow:auto;
+		left: 100px; /* change this value to one that works best for you */
+		top: -18px; /* change this value to one that works best for you */
+		background: transparent url(/generator/show-clickable-imge-link-on-hover_files/arrow-down-grey.png) left 23px no-repeat;
+		
+		opacity:0;
+		height: 0;
+		overflow: hidden;
+	}
+	
+	a.demo_img>div img {
+		padding:8px;
+		margin-left:4px;
+        width:100%;
+        height:100%;
+		border:1px solid #BCBDC0;
+		background-color:#BCBDC0;
+		-webkit-border-radius: 5px;
+	   	   -moz-border-radius: 5px;
+		    	border-radius: 5px;
+		
+		-webkit-box-sizing:border-box; 
+		   -moz-box-sizing:border-box; 
+				box-sizing:border-box;
+	}
+	a.demo_img:hover>div {
+		
+		opacity:1;
+		padding: 8px;
+        height:auto;
+        width:200%;
+		
+		z-index:1;
+	}

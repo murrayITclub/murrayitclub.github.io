@@ -22,13 +22,21 @@
         <hr>
         <h3><strong><a class="secretlink" href="index.html">bit.ly/murrayIT</a></strong></h3>
         <hr>
-        <h4 style="line-height:0; text-align:center;">Useful Links</h4>
+        <h4 style="line-height:0; text-align:center;text-decoration: underline;">Useful Links</h4>
+        <h5 style="margin-bottom:-8px;"> Image Editing </h5>
         <ul>
             <li><a target="_blank" href="https://pixlr.com/editor">Pixlr Editor</a> </li>
             <li><a target="_blank" href="https://unsplash.com/">Unsplash</a> </li>
             <li><a target="_blank" href="https://www.pexels.com/">Pexels</a> </li>
-            <li><a target="_blank" href="flipsideshowcase/showcase.html">Website gallery</a> </li>
         </ul>
+        <h5 style="margin-bottom:-8px;"> Web Design </h5>
+        <ul>
+            <li><a target="_blank" href="flipsideshowcase/showcase.html">Gallery of your websites</a> </li>
+            <li><a target="_blank" href="basicCSS.html">Adding colors</a> </li>
+            <li><a target="_blank" href="publishing.html">Publishing on Github</a></li>
+        </ul>
+        <!--<h5 style="margin-bottom:-8px;"> ?? </h5>
+        <li><a target="_blank" href="https://makecode.microbit.org."> MakeCode for micro:bit</a></li>-->
     </nav>
         
     <main>
@@ -52,6 +60,143 @@
         <div class="unit"> <h2>Digital Making</h2>
             <article>
                 <p>To start the new semester, we'll use our coding skills to interact with things in the real world. Get excited!</p>
+                <hr>
+                <section>
+                    <h3>Documenting your project</h3>
+                    <p>Now that your switch is built, you can show it off on your website!<p>
+                    <ol>
+                        <li>Use an iPad or phone to take pictures of...</li>
+                        <ul>
+                            <li>Your circuit reflection sheet</li>
+                            <li>Your Make-a-Switch design (on paper)</li>
+                            <li>Your switch with the light <strong>off</strong></li>
+                            <li>Your switch with the light <strong>on</strong></li>
+                        </ul>
+                        <li>Transfer the pictures to your <strong>computer</strong> by emailing them to yourself or putting them in <a href="https://drive.google.com/" target="_blank">Google Drive</a></li>
+                        <li>Add a section to your website about this project (use the <strong>Updating your Website</strong> sheet in your folder!)
+                        <br>Include...</li>
+                        <ul>
+                            <li>A <strong>heading</strong> with a title like <i>Make a Switch</i> or <i>Circuit Art</i></li>
+                            <li>The <strong>pictures</strong> you took</li>
+                            <li style="line-height: 1.5">At least two <strong>paragraphs</strong> (they can be short) describing the work you did, what the images show, things you learned, etc.
+                                <a href="examplesiteSwitch.html">Here's an example.</a></li>
+                            
+                        </ul>
+                    </ol>
+                    <button class="inneraccordion">How do I add images again?</button>
+            <div class="innerpanel">   
+                
+                <p>This video will show you how to work with images in HTML:</p>
+            <div style="width:75%; margin:auto;">
+             <div class="iframe-container">
+                 <iframe src="https://www.youtube.com/embed/HJq2Vadbu7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+            </div>
+                <div class="review"><p><u>Quick review</u>: in this video you saw that...</p>
+                    <ul>
+                        <li>The &#60;img&#62; tag is <strong>different from other tags</strong> because...</li>
+                        <ul>
+                        <li>It needs a <strong>source</strong> and <strong>alt text</strong> to work.<br>
+                            For example, <code style="font-size:120%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="emoji.png" alt="emoji with Pikachu face" &#62;</code>
+                            <li> It does <strong>not</strong> need a closing tag - there is no &#60;&#47;img&#62; tag!</li>
+                        </ul>
+                    </ul>
+                        </div>
+                    </div>
+                    
+                    <button class="inneraccordion" style="margin-top:5px;">How do I make an image <strong>bigger or smaller</strong>?</button>
+                        <div class="innerpanel">
+                            <p>Right now, your image tags should look something like this:</p>
+                                <code style="font-size:110%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="emoji.png" alt="emoji with Pikachu face"&#62;</code>
+                                <p>
+                                To change the size, you can add a <i>style attribute</i> to the tag, like this:</p>
+                                <div style="margin-left:20px;"><code style="font-size:110%; background-color:#00000022; padding:5px; line-height:2;">&#60;img src="emoji.png" alt="emoji with Pikachu face" <strong>style="width:50%;"</strong>&#62;</code></div><br>
+                            <p style="font-size:80%;margin-left:10px;"><i>Why do I only set the width and not the height? When you change the width, the computer will change the height automatically. This makes sure the image still looks correct!</i></p>
+                        </div>
+                
+                    <br>
+                <section>
+                    <br>
+                <button class="accordion">Project #2: Make a Switch</button>
+                <div class="panel">
+                <br>
+                <div class="goals">Goals: be able to...
+                <ul>
+                    <li>understand that a switch is anything that opens and closes a circuit</li>
+                    <li>design a project and follow a plan to complete it</li>
+                    <li>use tools to build with circuitry</li>
+                    <li>debug (find and fix errors) in simple circuits</li>
+                    </ul>
+                    </div>
+            <br>
+                    <p>A <strong>switch</strong> is anything that can open and close a circuit. There are lots of different types of switches you can buy...but you can also make your own!</p>
+                    
+                    <p>In this project, we'll build circuits with alligator clips, lights, and batteries...and then create our own switches out of cardboard and conductive tape. Creativity is strongly encouraged!</p>
+                    
+                    <p>Examples:</p>
+                    
+                    <h4>How do I do it?</h4>
+                    <div style="border:1px solid black; overflow:auto; padding:0px 10px;">
+                    <div style="width:48%; padding-right:10px;float:left;margin-right:20px;border-right:1px solid black;">
+                        <p style="margin-top:8px;">Option 1: make part of the circuit <strong>move</strong> to touch the other side.</p>
+                        <img src="touchopen.jpg" style="width:93%">
+                        <img src="touchclosed.jpg" style="width:93%">
+                        </div>
+                    <div style="width:48%; padding-left:5px;float:right;">
+                        <p style="margin-top:8px;">Option 2: Leave a gap in your circuit, and create a piece that <strong>bridges</strong> the gap.</p>
+                        <img src="bridgeopen.jpg" style="width:85%">
+                        <img src="bridgeclosed.jpg" style="width:85%">
+                        </div>
+                        <div style="clear:both"><hr><p style="line-height: 1.5">Once you know which type of switch you want to build, you'll sketch a design on paper.
+                            Next, you'll build the circuit itself (no cardboard yet!). When you have it working, you can go crazy with cardboard, colors, and tape.</p>
+                        </div>
+                    </div>
+                    </div> <!--end of make a switch panel-->
+                    
+                        
+                </section>
+                <br>
+                <section>
+                <button class="accordion">Project #1: Circuit Challenges</button>
+                <div class="panel">
+                <br>
+                <div class="goals">Goals: be able to...
+                <ul>
+                    <li>understand that electricity travels through closed loops called circuits</li>
+                    <li>persist through frustration in challenge-based learning</li>
+                    <li>reflect on and document learning</li>
+                </ul>
+                    </div>
+                    <br>
+                    <p>Electricity has to travel through a <i>closed loop</i> called a <strong>circuit</strong>. Here are the circuit-building challenges we tried - hover over the blue text to see solutions!
+                        <ol>
+                            <li>Light up a <strong>lightbulb</strong> using a single battery</li>
+                            <li>Light a lightbulb with a <strong>battery pack</strong> and <strong>alligator clip wires</strong>
+                            <a href="#" onclick="return false;" class="demo_img" title="" target="_blank" style="margin-left:10px;">
+                                <i>See a solution</i>
+	                       <div><img src="bbw2.png" alt="circuit showing light connected to batteries"/></div> </a></li>
+                            <li>Use a <strong>switch</strong> to control the lightbulb
+                            <a href="#" onclick="return false;"  class="demo_img" title="" target="_blank" style="margin-left:10px;">
+                                <i>See a solution</i>
+	                       <div><img src="bbw3.5.png" alt="circuit showing light connected to batteries and switch"/></div> </a></li>
+                            <li>Build a circuit with a switch, motor, and light: when you flip the switch one way, the <strong>light is on and motor is off</strong>; when you flip it the other way, the <strong>motor is on and the light is off</strong>           <a href="#" onclick="return false;"  class="demo_img" title="" target="_blank" style="margin-left:10px;">
+                                <i>See a solution</i>
+	                       <div><img src="bbw4w1bp.png" alt="circuit showing light and motor connected to batteries"/></div> </a></li>
+                            <li>Build a circuit with <strong>two lights</strong> that are both (equally) bright                            
+                                <a href="#" onclick="return false;" class="demo_img" title="" target="_blank" style="margin-left:10px;">
+                                <i>See a solution</i>
+	                       <div><img src="bbw5.png" alt="circuit showing two lights connected to batteries"/></div> </a></li>
+                    </ol>
+                    <hr>
+                    <p>What did we learn? This activity shows us that...</p>
+                    <ul>
+                        <li>Electricity has to travel in closed loops called <strong>circuits</strong></li>
+                        <li>A <strong>switch</strong> is any device that can open and close a circuit. With switches with more than two legs (the metal connecting pieces), it can be hard to figure out which legs to clip wires to!</li>
+                        <li>A circuit is either <i>all on</i> or <i>all off</i>. If you want to have one thing on and one thing off, they each need to have their <i>own</i> path to the battery.
+                        <li>If you put more than one light in the <strong>same circuit</strong>, they'll both be dim. To make them both <i>bright</i>, they each need their <i>own</i> path to the battery. (The first picture is called a <i>series circuit</i>, and the second is a <i>parallel circuit</i>).</li>
+                    </ul>
+                    </div><!--end of bbw panel-->
+                </section>
             </article>
             <hr>
         </div> <!--end of digital making unit-->
@@ -59,7 +204,7 @@
             <article>
             <button class="accordion">Project #2: Starting Your Website</button>
             <div class="panel">
-            <br><br>
+            <br>
              <div class="goals">Goals: be able to...
                 <ul>
                     <li>explain how HTML tags create structure</li>
@@ -447,7 +592,7 @@
         <article>
             <button class="accordion">Project #1: An Hour of Code</button>
             <div class="panel">
-            <br><br>
+            <br>
              <div class="goals">Goals: be able to...
                 <ul>
                     <li>understand that coding is giving a computer instructions to complete a task</li>
@@ -558,7 +703,7 @@
         <article>
             <button class="accordion">Project #3: Pixlr Final Project</button>
             <div class="panel">
-            <br><br>
+            <br>
              <div class="goals">Goals: be able to...
                 <ul>
                     <li>Choose and independently follow a tutorial</li>
@@ -602,7 +747,7 @@
         <article>
             <button class="accordion">Project #2: Use Pixlr to "carve" a pumpkin (or create a custom emoji)</button>
             <div class="panel">
-            <br><br>
+            <br>
              <div class="goals">Goals: be able to...
                 <ul>
                     <li>Use all three selection tools</li>

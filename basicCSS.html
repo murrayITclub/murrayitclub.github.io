@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> IT @ Murray, 2019-20 </title>
+<link href="https://fonts.googleapis.com/css?family=Righteous|Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
+<link type="text/css" href="murraysite.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+    <header>
+        <h1><a class="secretlink" href="index.html">Everything IT @ Murray Middle, 2019-20</a></h1>
+        <!--if you're reading this, congrats! you've found the easter eggo. waffley goodness upon you. -->
+    </header>
+
+    <nav>
+        <img src="eileen.png" alt="headshot of teacher, Eileen">
+        <div id="teacherinfo">
+            <p>Teacher: Eileen King <br>
+                Email: <a href="mailto:eking@mncfs.org">eking@mncfs.org</a></p>
+        </div>
+        <hr>
+        <h3><strong><a class="secretlink" href="index.html">bit.ly/murrayIT</a></strong></h3>
+        <hr>
+
+        <h4 style="line-height:0; text-align:center;text-decoration: underline;">Useful Links</h4>
+        <h5 style="margin-bottom:-8px;"> Image Editing </h5>
+        <ul>
+            <li><a target="_blank" href="https://pixlr.com/editor">Pixlr Editor</a> </li>
+            <li><a target="_blank" href="https://unsplash.com/">Unsplash</a> </li>
+            <li><a target="_blank" href="https://www.pexels.com/">Pexels</a> </li>
+        </ul>
+        <h5 style="margin-bottom:-8px;"> Web Design </h5>
+        <ul>
+            <li><a target="_blank" href="flipsideshowcase/showcase.html">Gallery of your websites</a> </li>
+            <li><a target="_blank" href="basicCSS.html">Adding colors</a> </li>
+            <li><a target="_blank" href="publishing.html">Publishing on Github</a></li>
+        </ul>
+        <!--<h5 style="margin-bottom:-8px;"> ?? </h5>
+        <li><a target="_blank" href="https://makecode.microbit.org."> MakeCode for micro:bit</a></li>-->
+    </nav>
+        
+    <main>
+        <p> Here's where you'll find links, images, and resources for Everything IT at Murray Middle School. </p>
+        <hr> 
+
+            <h3> How do I add colors, fonts, or other styles to my website? </h3>
+                <div class="subacc_panel" style="display:block;">
+        <p style="line-height: 1.5">Right now, your website has <strong>content</strong> (words and images) and <strong>structure</strong> (HTML tags). If you want to add <strong>styles</strong>, like colors and fonts, you'll need to use a new language called <i>CSS</i>.</p>
+                    <hr>
+                    
+                <p>1. First, you can use some code.org activities to learn how CSS works.</p>
+                
+                <p>In Lesson 10: Try activities 1-12. (Yes, that's a lot, but you're learning a whole new language!) </p>
+                <img src ="lesson10.png" style="width:60%;margin-left:20px;float:left;margin-bottom:10px;">
+                <div class="links" style="width:20%;float:right;"><a target="_blank" style="width:90%; margin-bottom:10px;" href="https://studio.code.org/s/csd2-2019/stage/10/puzzle/1">Let's go!</a></div>
+                <p style="float:left;font-size:95%;color:#222;"><i>Make sure you read <u>all</u> the directions for each activity - you will usually need to scroll down. </i></p>
+                <hr style="clear:both;">
+                <p style="clear:both;margin-top:10px">2. To create a <strong>stylesheet</strong> in Brackets, click <i>File</i>, then <i>New</i>.</p> 
+                <div style="width:15%" class="articleimg"><img src="brackets8.png"></div>
+                
+                <p style="line-height:1.5">Before you start typing, <strong>save</strong> the file: click <i>File</i>, then <i>Save</i>. <span style="color:red;">Name the file <strong>style.css</strong>, and make sure to save it in your IT Club folder</span>. This is very important, so ask for help if you need it!</p>
+                <div style="width:100%" class="articleimg"><img style="width:15%; padding-right:10px;padding-bottom:50px;" src="brackets11.png"><img style="width:80%" src="stylesheet1.png"></div>
+                
+                <p style="clear:both;margin-top:10px">Next, go back to your <strong>index.html</strong> file, and make sure there's a <i>link element</i> inside the <strong>head</strong>, like this:</p> 
+                <div style="width:55%" class="articleimg"><img src="stylesheet2.png"></div>
+                <p><strong>Note:</strong> do <strong>not</strong> add all of the tags in that picture - just see if the <span style="background-color:#45ee1233">highlighted line</span> is already between <code>&#60;head&#62;</code> and <code>&#60;&#47;head&#62;</code>. If it's not there, add it!</p>
+                
+                <p style="line-height:1.6">Now you're ready to start adding styles to your website! Remember, every time you make a change to <i>index.html</i> or <i>style.css</i>, you'll need to <strong>save</strong> the file you changed, then <strong>reload</strong> your website to see the changes.</p>
+                <p style="line-height:1.6">Need help with CSS? <a target="_blank" href="https://studio.code.org/s/csd2-2019/stage/10/puzzle/11">Review in code.org</a>, or look at W3Schools (for example, here's how to <a href="https://www.w3schools.com/css/css_background.asp" target="_blank">set a background color</a>.</p>
+            </div>
+
+        
+    </main>
+
+    <footer> &copy; Eileen King, 2019-20</footer>
+    </div> <!--end of wrapper div-->
+    
+    <script>
+        
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+ 
+    
+</script>
+    
+    
+</body>
+</html>
