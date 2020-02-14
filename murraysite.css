@@ -269,12 +269,12 @@ article li {
     border: 1px solid #222;
 }
     
-.donepics {
+.right30 {
     float:right;
     width:25%;
 }
     
-.whendone {
+.left70 {
     float:left;
     width:70%;
 }
