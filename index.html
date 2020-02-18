@@ -107,7 +107,7 @@
                     <ul>
                         <li>The &#60;img&#62; tag is <strong>different from other tags</strong> because...</li>
                             <ul style="margin-top:10px;">
-                                <li style="line-height:1.4;">It needs a <strong>source</strong> and <strong>alt text</strong> to work.<br>
+                                <li style="line-height:1.4=;">It needs a <strong>source</strong> and <strong>alt text</strong> to work.<br>
                                 For example, <code style="font-size:120%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="emoji.png" alt="emoji with Pikachu face" &#62;</code></li>
                                 <ul><li><code style="font-size:120%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="<i><strong>What goes here?</strong></i>"&#62;</code> The <i>exact name</i> of your image file. If you start to type it, Brackets will help you with the rest.</li>
                                 <li style="line-height:1.4"><code style="font-size:120%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="emoji.png" alt="<i><strong>What goes here?</strong></i>"&#62;</code> Some <i>alt text</i> - a short description of your image for people who can't see it. There's no "right" thing to put here; it's your choice.</li></ul>
@@ -941,87 +941,6 @@
 
     <footer> &copy; Eileen King, 2019-20</footer>
     </div> <!--end of wrapper div-->
-    
-<script>
-        
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-    
-    var inneracc = document.getElementsByClassName("inneraccordion");
-
-for (i = 0; i < inneracc.length; i++) {
-  inneracc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-var subacc = document.getElementsByClassName("subaccordion");
-var j;
-
-for (j = 0; j < subacc.length; j++) {
-  subacc[j].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-var nb = document.getElementsByClassName("nextbutton");
-var k;
-for (k = 0; k < nb.length; k++) {
-  nb[k].addEventListener("click", function() {
-    var par = this.parentElement.parentElement;
-    par.previousElementSibling.classList.toggle("active");
-
-    if (par.style.display === "block") {
-      par.style.display = "none";
-    } else {
-      par.style.display = "block";
-    }
-    var nextacc=par.nextElementSibling;
-    nextacc.classList.toggle("active");
-    var nextpanel=nextacc.nextElementSibling;
-    nextpanel.style.display="block";
-    nextacc.scrollIntoView();
-    window.scrollBy(0, -20);
-  });
-}
-    
-</script>
-    
+        <script src="murraysite.js"></script>
 </body>
 </html>
