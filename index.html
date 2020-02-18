@@ -102,13 +102,15 @@
                         <iframe src="https://www.youtube.com/embed/HJq2Vadbu7M" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review" style="width:100%">
                     <p><u>Quick review</u>: in this video you saw that...</p>
                     <ul>
                         <li>The &#60;img&#62; tag is <strong>different from other tags</strong> because...</li>
-                            <ul>
-                                <li>It needs a <strong>source</strong> and <strong>alt text</strong> to work.<br>
-                                For example, <code style="font-size:120%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="emoji.png" alt="emoji with Pikachu face" &#62;</code>
+                            <ul style="margin-top:10px;">
+                                <li style="line-height:1.4;">It needs a <strong>source</strong> and <strong>alt text</strong> to work.<br>
+                                For example, <code style="font-size:120%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="emoji.png" alt="emoji with Pikachu face" &#62;</code></li>
+                                <ul><li><code style="font-size:120%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="<i><strong>What goes here?</strong></i>"&#62;</code> The <i>exact name</i> of your image file. If you start to type it, Brackets will help you with the rest.</li>
+                                <li style="line-height:1.4"><code style="font-size:120%; background-color:#00000022;padding:5px;margin-left:20px;">&#60;img src="emoji.png" alt="<i><strong>What goes here?</strong></i>"&#62;</code> Some <i>alt text</i> - a short description of your image for people who can't see it. There's no "right" thing to put here; it's your choice.</li></ul>
                                 <li> It does <strong>not</strong> need a closing tag - there is no &#60;&#47;img&#62; tag!</li>
                             </ul>
                         </ul>
