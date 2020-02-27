@@ -84,6 +84,11 @@ nav ul li a:hover, .secondarynav ul li a:hover, .links a:hover {
 
 }
 
+.spice:hover {
+    color:darkgray;
+    border:1px white solid;
+}
+    
 .links a {
     display:inline-block;
     padding:10px;
@@ -93,6 +98,26 @@ nav ul li a:hover, .secondarynav ul li a:hover, .links a:hover {
     text-decoration: none;
 }
 
+.shoutout {
+    border:1px purple dotted; 
+    text-align:center;
+    background-color: #C096BF;
+    color: #333;
+    padding: 14px;
+    margin-left:10px;
+  width: 70%;
+  text-align: center;
+  outline: none;
+  font-size: 100%;
+  transition: 0.4s;
+    margin-top:10px;
+    
+}
+
+.shoutout:hover {
+      background-color: #ccc; 
+    
+}
 footer {
    	font-size: 70%;
     padding: 10px;
