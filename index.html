@@ -37,8 +37,10 @@
             <li><a target="_blank" href="https://www.w3schools.com/howto/default.asp">W3Schools: How to...</a></li>
             <li><a target="_blank" href="favicons.html">Make a Favicon</a></li>
         </ul>
-        <!--<h5 style="margin-bottom:-8px;"> ?? </h5>
-        <li><a target="_blank" href="https://makecode.microbit.org."> MakeCode for micro:bit</a></li>-->
+        <h5 style="margin-bottom:-8px;"> Other Stuff </h5>
+        <ul>
+        <li><a target="_blank" href="https://makecode.microbit.org."> MakeCode for micro:bit</a></li>
+        </ul>
     </nav>
         
     <main>
@@ -96,6 +98,171 @@
                             
                         </ul>
                     </ol>
+                    
+                    <!-- a nifty interactive to-do list
+
+<style>
+
+
+/* Remove margins and padding from the list */
+.toDo ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+.toDo ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+.toDo ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+.toDo ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+.toDo ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the how button */
+.how {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.how:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+#toDo_header {
+  background-color: blue;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+#toDo_header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="toDo">
+<div id="toDo_header">
+  <h2 style="margin:5px">To do:</h2>
+</div>
+
+<ul id="myUL">
+  <li class="checked">Install Brackets</li>
+  <li id="https://w3schools.com">Finish switch project</li>
+  <li>Take pictures</li>
+  <li>Transfer pictures to Google Drive</li>
+  <li>Download pictures onto computer</li>
+  <li>Add pictures to website</li>
+  <li>Add text describing pictures</li>
+</ul>
+</div>
+
+<script>
+// Create a "how" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("Help!");
+  span.className = "how";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a how button to hide the current list item
+var how = document.getElementsByClassName("how");
+var i;
+for (i = 0; i < how.length; i++) {
+  how[i].onclick = function() {
+    var div=this.parentElement;
+    window.open(div.id);
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+ to do list -->
             <button class="inneraccordion">How do I add images again?</button>
             <div class="innerpanel">   
                 <p>This video will show you how to work with images in HTML:</p>
